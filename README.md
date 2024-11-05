@@ -12,3 +12,13 @@ The primary sources of my data was Sales data.csv
 2. SQL for structured data querrying
 3. PowerBI for data cleaning, analysis, visualization
 4. GitHub for data showcasing and portfolio building 
+### Data Cleaning and Preparation
+In the initial stage of my data cleaning, I performed the following actions;
+1. Data loading and inspection
+2. Handling missing variables
+3. Data cleaning and formatting
+## Exploratory Data Analysis
+o I performed an initial exploration of the sales data, using pivot tables to summarize total sales by product, region, and month.
+o Use Excel formulas to calculate metrics such as average sales per product and
+total revenue by region.
+o Create any other interesting report
