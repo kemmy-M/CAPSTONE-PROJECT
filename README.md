@@ -17,7 +17,7 @@ In the initial stage of my data cleaning, I performed the following actions;
 1. Data loading and inspection
 2. Handling missing variables
 3. Data cleaning and formatting
-## Exploratory Data Analysis using microsoft excel
+### Exploratory Data Analysis using microsoft excel
 o I performed an initial exploration of the sales data, using pivot tables to summarize total sales by product, region, and month.
 ![report of total sales by products](https://github.com/user-attachments/assets/f0fc8145-eb75-4e1a-b4f5-93b3225e7ff7)
 
@@ -33,4 +33,60 @@ o Use Excel formulas to calculate metrics such as average sales per product and 
 o Create any other interesting report
 
 ![average sales per region](https://github.com/user-attachments/assets/4cc5270b-0fc9-41b1-b0df-c49edf11c244)
+
+### Exploratory Data Analysis using SQL
+Queries were writing to extract key insights based on the following questions.
+
+```SQL
+SELECT * FROM [dbo].[SalesData]
+```
+o retrieve the total sales for each product category.
+```SQL
+SELECT Product,SUM(SALES) Total_Sales FROM SalesData
+GROUP BY Product
+```
+
+o find the number of sales transactions in each region.
+```SQL
+SELECT Region,count(SALES) Sales_Transaction FROM SalesData
+GROUP BY Region
+```
+o find the highest-selling product by total sales value.
+```SQL
+SELECT TOP 1 Product, SUM(Sales) Total_Sales FROM SalesData
+GROUP BY Product
+Order by Total_Sales desc
+```
+o calculate total revenue per product.
+```SQL
+SELECT Product,SUM(SALES) Total_Revenue FROM SalesData
+GROUP BY Product
+```
+o calculate monthly sales totals for the current year.
+```SQL
+SELECT DATENAME(MONTH,orderdate) [Month], DATENAME(YEAR,orderdate) [Year], SUM(Sales) Monthly_Sales 
+FROM SalesData
+WHERE DATENAME(YEAR,orderdate) = DATENAME(YEAR,GETDATE()) -- Targeting the current year
+GROUP BY DATENAME(YEAR,orderdate), DATENAME(MONTH,orderdate)
+```
+o find the top 5 customers by total purchase amount.
+```SQL
+SELECT TOP 5 Customer_Id, SUM(Sales) Total_Purchase FROM SalesData
+GROUP BY Customer_Id
+Order by Total_Purchase desc
+```
+o calculate the percentage of total sales contributed by each region.
+```SQL
+SELECT region,SUM(Sales) total_Sales, (SUM(Sales)*100)/(select SUM(Sales) Total_Sales FROM SalesData) percentage_of_TotalSales 
+FROM SalesData
+GROUP BY region
+
+```
+o identify products with no sales in the last quarter
+```SQL
+SELECT Product FROM SalesData 
+WHERE ORDERDATE  not BETWEEN DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()) - 1, 0) AND DATEADD(SECOND, -1, DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()), 0))
+GROUP BY Product
+```
+
 
