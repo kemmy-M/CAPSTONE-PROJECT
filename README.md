@@ -17,7 +17,7 @@ In the initial stage of my data cleaning, I performed the following actions;
 1. Data loading and inspection
 2. Handling missing variables
 3. Data cleaning and formatting
-## Exploratory Data Analysis
+## Exploratory Data Analysis using microsoft excel
 o I performed an initial exploration of the sales data, using pivot tables to summarize total sales by product, region, and month.
 ![report of total sales by products](https://github.com/user-attachments/assets/f0fc8145-eb75-4e1a-b4f5-93b3225e7ff7)
 
