@@ -89,4 +89,14 @@ WHERE ORDERDATE  not BETWEEN DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()) - 
 GROUP BY Product
 ```
 
+### Exploratory Data Analysis using PowerBI
+I was able to create a dashboard that visualizes the insights found in Excel and SQL which include a sales overview, top-performing products, and
+regional breakdowns.
+
+![SALES 1](https://github.com/user-attachments/assets/ac0bc0f0-dbdd-41b7-9c5c-96ffd4204931)
+
+![SALES 2](https://github.com/user-attachments/assets/bf3da117-5b50-47b4-825e-bc3e82f4366d)
+
+![SALES 3](https://github.com/user-attachments/assets/49cd2afa-a309-4ba3-891e-b033daf93c8b)
+
 
