@@ -11,4 +11,4 @@ The primary sources of my data was Sales data.csv
 1. Microsoft Excel [Download here](https://www.microsoftexcel.com) for data cleaning, analysis and visualizaztion
 2. SQL for structured data querrying
 3. PowerBI for data cleaning, analysis, visualization
-4. GitHub for 
+4. GitHub for data showcasing and portfolio building 
