@@ -18,21 +18,30 @@ In the initial stage of my data cleaning, I performed the following actions;
 2. Handling missing variables
 3. Data cleaning and formatting
 ### Exploratory Data Analysis using microsoft excel
-o I performed an initial exploration of the sales data, using pivot tables to summarize total sales by product, region, and month.
+ I performed an initial exploration of the sales data, using pivot tables to summarize total sales by product, region, and month.
 ![report of total sales by products](https://github.com/user-attachments/assets/f0fc8145-eb75-4e1a-b4f5-93b3225e7ff7)
+
 
 ![reports of total sales per region](https://github.com/user-attachments/assets/9ca361d5-d6d9-49dd-9f17-d2fadff03c81)
 
 ![Report of total sales by month](https://github.com/user-attachments/assets/16a17b03-989d-4d1a-95a7-53b989d3f172)
 
+ From the table above, it was deduced that the top-selling products is 'shoes', by regional
+performance, the 'South' has the best sales trend overall and the monthly sales trends highlights 'February' as the month with highest sales both in year 2023 and year 2024
 
-o Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
+I was able to use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
 ![Sales data](https://github.com/user-attachments/assets/6f29225e-bd86-4a6a-a4ca-70a80b406d77)
 ![Sales data revenue by region](https://github.com/user-attachments/assets/1bee7208-0386-4884-98f5-1a9e059395f1)
 
-o Create any other interesting report
+ I also created some other interesting report through Excel functions and charts
 
 ![average sales per region](https://github.com/user-attachments/assets/4cc5270b-0fc9-41b1-b0df-c49edf11c244)
+
+![Report of total sales by product graph](https://github.com/user-attachments/assets/0c2370d0-f9d6-414e-8272-667fd90970b4)
+
+![Rreport of sales by month graph](https://github.com/user-attachments/assets/d31ca55e-586b-4eef-bac9-d9850039e828)
+
+![Report of total sale by region graph](https://github.com/user-attachments/assets/5927a5d3-2812-4026-84c0-a5d97f01f5fa)
 
 ### Exploratory Data Analysis using SQL
 Queries were writing to extract key insights based on the following questions.
@@ -99,4 +108,5 @@ regional breakdowns.
 
 ![SALES 3](https://github.com/user-attachments/assets/49cd2afa-a309-4ba3-891e-b033daf93c8b)
 
-
+  From the table above, it was deduced that the top-selling products is 'shoes', by regional
+performance, the 'South' has the best sales trend overall and the monthly sales trends highlights 'February' as the month with highest sales both in year 2023 and year 2024
